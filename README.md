@@ -8,7 +8,7 @@ AGI, with a standalone executable, or FastAGI, with a TCP server.
 ```go
 package main
 
-import "github.com/CyCoreSystems/agi"
+import "github.com/lordbasex/agi"
 
 func main() {
    a := agi.NewStdio()
@@ -32,7 +32,7 @@ For a TCP server, register a HandlerFunc to a TCP port:
 ```go
 package main
 
-import "github.com/CyCoreSystems/agi"
+import "github.com/lordbasex/agi"
 
 func main() {
    agi.Listen(":8080", handler)
